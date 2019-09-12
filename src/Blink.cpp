@@ -11,7 +11,7 @@ void BLINK::begin(uint8_t _pin, const char* _mode) {
   pinMode(_pin, _mode);
 }
 
-void BLINK::blink(uint8_t _pin, uint8_t _delay) {
+void BLINK::blink(uint8_t _pin, uint16_t _delay) {
   curMillis = millis();
   if (curMillis - prevMillis >= _delay) {
     prevMillis = curMillis;

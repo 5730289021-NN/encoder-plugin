@@ -2,6 +2,7 @@
   "name" : "kbide-plugin-template",
   "title": "Blink",
   "keywords": "ide, esp32, ultrasonic",
+  "category":"",
   "description": "Plugin Template for KB-IDE",
   "git": "https://github.com/cmmakerclub/kbide-plugin-template/",
   "author": "cmmakerclub",

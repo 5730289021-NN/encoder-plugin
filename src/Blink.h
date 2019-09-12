@@ -21,7 +21,7 @@ public:
   ~BLINK();
 
   void begin(uint8_t _pin, const char* _mode);
-  void blink(uint8_t _pin, uint8_t _delay);
+  void blink(uint8_t _pin, uint16_t _delay);
   
 protected:
 private:
