@@ -1,1 +1,1 @@
-# Blink library for KB-IDE
+# Encoder library for KB-IDE

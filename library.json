@@ -1,17 +1,19 @@
 {
-  "name" : "kbide-plugin-template",
-  "title": "Blink",
-  "keywords": "ide, esp32, ultrasonic",
-  "category":"",
-  "description": "Plugin Template for KB-IDE",
-  "git": "https://github.com/cmmakerclub/kbide-plugin-template/",
-  "author": "cmmakerclub",
+  "name": "encoder-plugin",
+  "title": "Encoder",
+  "keywords": "ide, encoder",
+  "category": "",
+  "description": "Encoder Plugin for KB-IDE",
+  "git": "https://github.com/5730289021-NN/encoder-plugin/",
+  "author": "Norawit Nangsue",
   "email": "",
   "url": "http://www.kbide.org",
   "version": "1.0.0",
-  "board" : "",
-  "platform": ["arduino-esp32"],
+  "board": "",
+  "platform": [
+    "arduino"
+  ],
   "license": "",
-  "image" : "/static/display.png",
+  "image": "/static/display.png",
   "homepage": "http://www.kbide.org"
 }

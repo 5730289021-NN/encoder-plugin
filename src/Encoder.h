@@ -2,8 +2,8 @@
  * Blink plugin library for KB-IDE by chiang mai maker club
  ******************************************************************/
 
-#ifndef blink_h
-#define blink_h
+#ifndef encoder_h
+#define encoder_h
 
 #include <Arduino.h>
 
@@ -14,19 +14,28 @@
   #include <Arduino.h>
 #endif
 
-class BLINK
+class Encoder
 {
 public:
-  BLINK();
-  ~BLINK();
+  Encoder();
+  ~Encoder();
 
-  void begin(uint8_t _pin, const char* _mode);
-  void blink(uint8_t _pin, uint16_t _delay);
+  void begin(uint8_t _pin_A, uint8_t _pin_B);
+  void end();
+  long counter = 0;
   
 protected:
 private:
-	unsigned long prevMillis = 0;
-	unsigned long curMillis = 0;
+  void pin_A_callback();
+  void pin_B_callback();
+  void update_counter();
+
+  bool initialized = false;
+  uint8_t pin_A;
+  uint8_t pin_B;
+  bool pin_A_state = false;
+  bool pin_B_state = false;
+
 };
 
 #endif /*blink_h*/
