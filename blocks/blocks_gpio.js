@@ -1,11 +1,11 @@
 Blockly.Blocks['encoder_setupX'] = {
   init: function () {
     this.appendDummyInput()
-      .appendField("Encoder Setup X with Interrupt Pin A");
+      .appendField("Encoder X Setup with Interrupt Pin");
     this.appendValueInput("PinA")
       .setCheck("Number");
     this.appendDummyInput()
-      .appendField("and Interrupt Pin B");
+      .appendField("and Interrupt Pin");
     this.appendValueInput("PinB")
       .setCheck("Number");
     this.appendDummyInput();
@@ -21,11 +21,11 @@ Blockly.Blocks['encoder_setupX'] = {
 Blockly.Blocks['encoder_setupY'] = {
   init: function () {
     this.appendDummyInput()
-      .appendField("Encoder Setup Y with Interrupt Pin A");
+      .appendField("Encoder Y Setup with Interrupt Pin");
     this.appendValueInput("PinA")
       .setCheck("Number");
     this.appendDummyInput()
-      .appendField("and Interrupt Pin B");
+      .appendField("and Interrupt Pin");
     this.appendValueInput("PinB")
       .setCheck("Number");
     this.appendDummyInput();
@@ -43,7 +43,7 @@ Blockly.Blocks['encoder_setupY'] = {
 Blockly.Blocks['encoder_valueX'] = {
   init: function () {
     this.appendDummyInput()
-      .appendField("Encoder Counter X");
+      .appendField("Encoder X Counter Value");
     this.setOutput(true, "Number");
     this.setColour(330);
     this.setTooltip("");
@@ -54,7 +54,7 @@ Blockly.Blocks['encoder_valueX'] = {
 Blockly.Blocks['encoder_valueY'] = {
   init: function () {
     this.appendDummyInput()
-      .appendField("Encoder Counter Y");
+      .appendField("Encoder Y Counter Value");
     this.setOutput(true, "Number");
     this.setColour(330);
     this.setTooltip("");
@@ -66,7 +66,7 @@ Blockly.Blocks['encoder_valueY'] = {
 Blockly.Blocks['encoder_terminateX'] = {
   init: function () {
     this.appendDummyInput()
-      .appendField("Encoder Terminate X");
+      .appendField("Encoder X Terminate");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -76,10 +76,10 @@ Blockly.Blocks['encoder_terminateX'] = {
   }
 };
 
-Blockly.Blocks['encoder_terminate Y'] = {
+Blockly.Blocks['encoder_terminateY'] = {
   init: function () {
     this.appendDummyInput()
-      .appendField("Encoder Terminate Y");
+      .appendField("Encoder Y Terminate");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
