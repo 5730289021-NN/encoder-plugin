@@ -3,17 +3,17 @@
   "title": "Encoder",
   "keywords": "ide, encoder",
   "category": "",
-  "description": "Encoder Plugin for KB-IDE",
+  "description": "Plugin Template for KB-IDE",
   "git": "https://github.com/5730289021-NN/encoder-plugin/",
-  "author": "Norawit Nangsue",
+  "author": "cmmakerclub",
   "email": "",
   "url": "http://www.kbide.org",
   "version": "1.0.0",
   "board": "",
   "platform": [
-    "arduino"
+    "arduino-esp32"
   ],
   "license": "",
-  "image": "/static/display.png",
+  "image": "/static/encoder.png",
   "homepage": "http://www.kbide.org"
 }

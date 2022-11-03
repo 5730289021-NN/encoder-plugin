@@ -6,19 +6,20 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-BLINK	KEYWORD1
+Encoder	    KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-begin		KEYWORD2
-blink		KEYWORD2
+begin	    KEYWORD2
+end		    KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
 #######################################
 
+encoder KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

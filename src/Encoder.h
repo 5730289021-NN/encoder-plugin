@@ -20,21 +20,23 @@ public:
   Encoder();
   ~Encoder();
 
-  void begin(uint8_t _pin_A, uint8_t _pin_B);
-  void end();
-  long counter = 0;
+  static void begin(uint8_t _pin_A, uint8_t _pin_B);
+  static void end();
+  static long get_counter();
   
 protected:
 private:
-  void pin_A_callback();
-  void pin_B_callback();
-  void update_counter();
+  static void pin_A_callback();
+  static void pin_B_callback();
+  static void update_counter();
 
-  bool initialized = false;
-  uint8_t pin_A;
-  uint8_t pin_B;
-  bool pin_A_state = false;
-  bool pin_B_state = false;
+  static long counter;
+
+  static bool initialized;
+  static uint8_t pin_A;
+  static uint8_t pin_B;
+  static bool pin_A_state;
+  static bool pin_B_state;
 
 };
 

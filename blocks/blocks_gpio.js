@@ -18,6 +18,19 @@ Blockly.Blocks['encoder_setup'] = {
   }
 };
 
+
+
+Blockly.Blocks['encoder_value'] = {
+  init: function () {
+    this.appendDummyInput()
+      .appendField("Encoder Counter");
+    this.setOutput(true, "Number");
+    this.setColour(330);
+    this.setTooltip("");
+    this.setHelpUrl("");
+  }
+};
+
 Blockly.Blocks['encoder_terminate'] = {
   init: function () {
     this.appendDummyInput()
@@ -25,17 +38,6 @@ Blockly.Blocks['encoder_terminate'] = {
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(330);
-    this.setTooltip("");
-    this.setHelpUrl("");
-  }
-};
-
-Blockly.Blocks['encoder_value'] = {
-  init: function () {
-    this.appendDummyInput()
-      .appendField("Encoder Counter");
-    this.setOutput(true, "Number");
     this.setColour(330);
     this.setTooltip("");
     this.setHelpUrl("");
