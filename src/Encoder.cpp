@@ -77,12 +77,20 @@ static void Encoder::p2_callback() {
 
 static void Encoder::p3_callback() {
   p3_state = !p3_state;
-  update_counterY();
+  if(p3_state && !p4_state || !p3_state && p4_state) {
+    counterY++;
+  } else if{
+    counterY--;
+  }
 }
 
 static void Encoder::p4_callback() {
   p4_state = !p4_state;
-  update_counterY();
+  if(p3_state && p4_state || !p3_state && !p4_state) {
+    counterY++;
+  } else if{
+    counterY--;
+  }
 }
 
 // static void Encoder::update_counterX() {
