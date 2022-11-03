@@ -20,23 +20,38 @@ public:
   Encoder();
   ~Encoder();
 
-  static void begin(uint8_t _pin_A, uint8_t _pin_B);
-  static void end();
-  static long get_counter();
+  static void beginX(uint8_t p1, uint8_t p2);
+  static void endX();
+  static long get_counterX();
+
+  static void beginY(uint8_t p3, uint8_t p4);
+  static void endY();
+  static long get_counterY();
   
 protected:
 private:
-  static void pin_A_callback();
-  static void pin_B_callback();
-  static void update_counter();
+  static void p1_callback();
+  static void p2_callback();
 
-  static long counter;
+  static void p3_callback();
+  static void p4_callback();
 
-  static bool initialized;
-  static uint8_t pin_A;
-  static uint8_t pin_B;
-  static bool pin_A_state;
-  static bool pin_B_state;
+  static void update_counterX();
+  static void update_counterY();
+
+  static long counterX;
+  static long counterY;
+
+  static bool initializedX;
+  static bool initializedY;
+  static uint8_t p1; // Pin on board
+  static uint8_t p2;
+  static uint8_t p3;
+  static uint8_t p4;
+  static bool p1_state;
+  static bool p2_state;
+  static bool p3_state;
+  static bool p4_state;
 
 };
 
