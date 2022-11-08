@@ -28,6 +28,36 @@ Blockly.JavaScript['encoder_setupY'] = function (block) {
   return code;
 };
 
+Blockly.JavaScript['encoder_single_setupX'] = function (block) {
+  var value_pina = Blockly.JavaScript.valueToCode(block, 'PinA', Blockly.JavaScript.ORDER_ATOMIC);
+
+  var code = `#EXTINC#include <Encoder.h>#END
+  Encoder::beginX(${value_pina});
+  \n`;
+  return code;
+};
+
+Blockly.JavaScript['encoder_single_setupY'] = function (block) {
+  var value_pina = Blockly.JavaScript.valueToCode(block, 'PinA', Blockly.JavaScript.ORDER_ATOMIC);
+
+  var code = `#EXTINC#include <Encoder.h>#END
+  Encoder::beginY(${value_pina});
+  \n`;
+  return code;
+};
+
+Blockly.JavaScript['encoder_clearX'] = function (block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = 'Encoder::clearX();\n';
+  return code;
+};
+
+Blockly.JavaScript['encoder_clearY'] = function (block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = 'Encoder::clearY();\n';
+  return code;
+};
+
 Blockly.JavaScript['encoder_terminateX'] = function (block) {
   // TODO: Assemble JavaScript into code variable.
   var code = 'Encoder::endX();\n';

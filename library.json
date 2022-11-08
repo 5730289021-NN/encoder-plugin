@@ -5,13 +5,13 @@
   "category": "",
   "description": "Plugin Template for KB-IDE",
   "git": "https://github.com/5730289021-NN/encoder-plugin/",
-  "author": "cmmakerclub",
+  "author": "5730289021-NN",
   "email": "",
   "url": "http://www.kbide.org",
   "version": "1.2.0",
   "board": "",
   "platform": [
-    "arduino-esp32"
+    "arduino-avr"
   ],
   "license": "",
   "image": "/static/encoder.png",
