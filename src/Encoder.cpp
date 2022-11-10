@@ -12,7 +12,10 @@ bool Encoder::initializedY = false;
 bool Encoder::single_modeX = false;
 bool Encoder::single_modeY = false;
 
-
+uint8_t Encoder::p1 = 0;
+uint8_t Encoder::p2 = 0;
+uint8_t Encoder::p3 = 0;
+uint8_t Encoder::p4 = 0;
 bool Encoder::p1_state = false;
 bool Encoder::p2_state = false;
 bool Encoder::p3_state = false;
